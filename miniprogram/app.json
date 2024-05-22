@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/form/index",
+    "pages/community/index",
+    "pages/aboutme/index"
+  ],
+  "window": {
+    "backgroundColor": "#FFF",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFC107",
+    "navigationBarTitleText": "No随便",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents",
+  "useExtendedLib": {
+    "weui": true
+  },
+  "usingComponents": {
+    "component-tag-name": "./components/diy",
+    "lucky-wheel": "/miniprogram_npm/@lucky-canvas/mini/lucky-wheel/index",
+    "lucky-grid": "/miniprogram_npm/@lucky-canvas/mini/lucky-grid/index",
+    "slot-machine": "/miniprogram_npm/@lucky-canvas/mini/slot-machine/index"
+  },
+  "staticResources": {
+    "icon": "icons/homeface.svg"
+  }
+}

@@ -1,0 +1,30 @@
+<mp-searchbar ext-class='search' placeholder='搜索美食！'></mp-searchbar>
+<!-- index.wxml -->
+<view class="container">
+  <view class="column">
+    <view class="box" wx:for="{{boxes}}" wx:key="id">
+      <image src="{{item.image}}" mode="aspectFill" class="image"></image>
+      <text class="text">{{item.text}}</text>
+    </view>
+  </view>
+  <view class="column">
+    <view class="box" wx:for="{{boxes}}" wx:key="id">
+      <image src="{{item.image}}" mode="aspectFill" class="image"></image>
+      <text class="text">{{item.text}}</text>
+    </view>
+  </view>
+</view>
+<view class="navbar">
+  <navigator url="/pages/index/index" class="nav-item">
+    <image src='../../icons/首页-线框.png' mode="aspectFill" class="nav-image"></image>
+  </navigator>
+  <navigator url="/pages/form/index" class="nav-item">
+    <image src='../../icons/推荐-线框.png' mode="aspectFill" class="nav-image"></image>
+  </navigator>
+  <navigator url="/pages/community/index" class="nav-item">
+    <image src='../../icons/社区-面.png' mode="aspectFill" class="nav-image"></image>
+  </navigator>
+  <navigator url="/pages/aboutme/index" class="nav-item">
+    <image src='../../icons/我的-线框.png' mode="aspectFill" class="nav-image"></image>
+  </navigator>
+</view>

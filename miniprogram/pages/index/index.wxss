@@ -1,0 +1,50 @@
+.banner-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 97%;
+  display: block;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.swiper {
+  height: 20vh;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  margin-top: 80px;
+  width: 100%;
+  height: 7vh;
+  background-color: pink;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #e0e0e0
+}
+
+/* 导航项样式 */
+.nav-item {
+  padding: 5px 20px;
+  color: #333;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* 为当前激活的导航项添加样式 */
+.nav-item.active {
+  background-color: #e0e0e0;
+}
+
+.nav-image {
+  width: 35px;
+  /* 根据需要调整 */
+  height: 35px;
+  /* 根据需要调整 */
+}

@@ -1,0 +1,43 @@
+<view class="header">
+  <image class="avatar" src='{{userInfo.avatarUrl?userInfo.avatarUrl:this.defaultAvatarUrl}}' mode="aspectFill" />
+  <text class="name">{{userInfo.nickName?userInfo.nickName:'未登录用户'}}</text>
+</view>
+
+<view class="functions">
+  <view class="function-item" wx:for="{{functionItems}}" wx:key="id">
+    <image class="icon" src="{{item.icon}}" mode="aspectFill" bind:tap="action" data-id="{{item.id}}"/>
+    <text class="text">{{item.text}}</text>
+  </view>
+</view>
+<view class="main">
+  <view class="text2">
+    <text class="text1">评价</text>
+  <text class="text1">菜品收藏</text>
+  <text class="text1">帖子收藏</text>
+</view>
+
+<view class="container">
+  <view class="post">
+    <view class="box" wx:for="{{post}}" >
+      <image src="{{item.thumbnail}}" mode="aspectFill" class="image"></image>
+      <text class = "title">{{item.title}}</text>
+      <text class="summary">{{item.summary}}</text>
+    </view>
+  </view>
+</view>
+</view>
+
+<view class="navbar">
+  <navigator url="/pages/index/index" class="nav-item">
+    <image src='../../icons/首页-线框.png' mode="aspectFill" class="nav-image"></image>
+  </navigator>
+  <navigator url="/pages/form/index" class="nav-item">
+    <image src='../../icons/推荐-线框.png' mode="aspectFill" class="nav-image"></image>
+  </navigator>
+  <navigator url="/pages/community/index" class="nav-item">
+    <image src='../../icons/社区-线框.png' mode="aspectFill" class="nav-image"></image>
+  </navigator>
+  <navigator url="/pages/aboutme/index" class="nav-item">
+    <image src='../../icons/我的-面.png' mode="aspectFill" class="nav-image"></image>
+  </navigator>
+</view>

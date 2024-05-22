@@ -1,0 +1,60 @@
+<view class="show">
+  <!-- 第一行 -->
+  <view class="row">
+    <view class="column">
+      <image src="../../images/foods/汉堡披萨@3x.png" class="icon"></image>
+      <text class="desc">汉堡披萨</text>
+    </view>
+    <view class="column">
+      <image src="../../images/foods/日韩料理@3x.png" class="icon"></image>
+      <text class="desc">日韩料理</text>
+    </view>
+    <view class="column">
+      <image src="../../images/foods/龙虾烧烤(龙虾不会画@3x.png" class="icon"></image>
+      <text class="desc">龙虾烧烤</text>
+    </view>
+    <view class="column">
+      <image src="../../images/foods/火锅香锅@3x.png" class="icon"></image>
+      <text class="desc">火锅香锅</text>
+    </view>
+  </view>
+  <!-- 第二行 -->
+  <view class="row">
+    <view class="column">
+      <image src="../../images/foods/甜点饮品@3x.png" class="icon"></image>
+      <text class="desc">甜点饮品</text>
+    </view>
+    <view class="column">
+      <image src="../../images/foods/牛排西餐@3x.png" class="icon"></image>
+      <text class="desc">牛排西餐</text>
+    </view>
+    <view class="column">
+      <image src="../../images/foods/麻辣烫冒菜@3x.png" class="icon"></image>
+      <text class="desc">麻辣烫冒菜</text>
+    </view>
+    <view class="column">
+      <image src="../../images/foods/小吃@3x.png" class="icon"></image>
+      <text class="desc">小吃零食</text>
+    </view>
+  </view>
+</view>
+<view class='shop'>
+  <view class="box" wx:for="{{items}}" wx:key="id">
+    <image src="{{item.icon}}" class="icon"></image>
+    <text class="desc">{{item.text}}</text>
+  </view>
+</view>
+<view class="navbar">
+  <navigator url="/pages/index/index" class="nav-item">
+    <image src='../../icons/首页-线框.png' mode="aspectFill" class="nav-image"></image>
+  </navigator>
+  <navigator url="/pages/form/index" class="nav-item">
+    <image src='../../icons/推荐-面.png' mode="aspectFill" class="nav-image"></image>
+  </navigator>
+  <navigator url="/pages/community/index" class="nav-item">
+    <image src='../../icons/社区-线框.png' mode="aspectFill" class="nav-image"></image>
+  </navigator>
+  <navigator url="/pages/aboutme/index" class="nav-item">
+    <image src='../../icons/我的-线框.png' mode="aspectFill" class="nav-image"></image>
+  </navigator>
+</view>

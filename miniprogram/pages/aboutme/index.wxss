@@ -1,0 +1,143 @@
+.desc {
+  font-size: 14px;
+  /* 文字说明的字体大小 */
+  color: #333;
+  /* 文字说明的颜色 */
+}
+
+.navbar {
+  width: 100%;
+  height: 7vh;
+  background-color: pink;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #e0e0e0
+}
+
+/* 导航项样式 */
+.nav-item {
+  padding: 5px 20px;
+  color: #333;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* 为当前激活的导航项添加样式 */
+.nav-item.active {
+  background-color: #e0e0e0;
+}
+
+.nav-image {
+  width: 35px;
+  /* 根据需要调整 */
+  height: 35px;
+  /* 根据需要调整 */
+}
+
+/* index.wxss */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #FFC107;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.functions {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  border-radius: 10%;
+  background-color: white;
+}
+
+.function-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0px;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.main{
+  display: inline;
+  /* background-color: white; */
+  margin: 4%;
+  background-color: white;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+
+}
+.text2{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 98%;
+}
+.text1{
+  margin: 5%;
+  
+}
+.post {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  height: 60%;
+  /* 根据需要调整宽度，留出间隙 */
+  margin-right: 2%;
+  /* 右边距，确保两列之间有间隙 */
+  margin-left: 2%;
+}
+
+.box {
+  padding-bottom: 5%;
+  margin-bottom: 0;
+  /* 盒子之间的间距 */
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  border-color: black;
+  border-style:initial;
+  border-radius: 5%;
+  /* 确保图片和文字在同一个盒子内垂直排列 */
+}
+
+.image {
+  width: 100%;
+  border-radius: 5%;
+  /* 图片宽度占满盒子宽度 */
+  /* 根据图片展示的需求选择合适的 mode 属性 */
+}
+.title{
+  margin-top: 5px;
+}
+.summary{
+  margin-top: 0px;
+}

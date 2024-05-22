@@ -1,0 +1,27 @@
+<mp-searchbar ext-class='search' placeholder='搜索美食！'></mp-searchbar>
+<view class="banner-container">
+  <swiper class='swiper' autoplay="true" interval="5000" duration="500" circular="true" next-margin='50px'>
+    <swiper-item wx:for="{{bannerList}}" wx:key="unique">
+      <image src="{{item.imgUrl}}" class="banner-image" />
+    </swiper-item>
+  </swiper>
+  <view>
+    <view>
+      <lucky-wheel id="myLucky" width="700rpx" height="700rpx" blocks="{{blocks}}" prizes="{{prizes}}" buttons="{{buttons}}" bindstart="start" bindend="end" />
+    </view>
+    <view class="navbar">
+      <navigator url="/pages/index/index" class="nav-item">
+        <image src='../../icons/首页-面.png' mode="aspectFill" class="nav-image"></image>
+      </navigator>
+      <navigator url="/pages/form/index" class="nav-item">
+        <image src='../../icons/推荐-线框.png' mode="aspectFill" class="nav-image"></image>
+      </navigator>
+      <navigator url="/pages/community/index" class="nav-item">
+        <image src='../../icons/社区-线框.png' mode="aspectFill" class="nav-image"></image>
+      </navigator>
+      <navigator url="/pages/aboutme/index" class="nav-item">
+        <image src='../../icons/我的-线框.png' mode="aspectFill" class="nav-image"></image>
+      </navigator>
+    </view>
+  </view>
+</view>

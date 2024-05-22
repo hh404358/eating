@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "No随便",
+  "usingComponents": {
+    "mp-dialog": "weui-miniprogram/dialog/dialog",
+    "mp-searchbar": "weui-miniprogram/searchbar/searchbar",
+    "lucky-wheel": "/miniprogram_npm/@lucky-canvas/mini/lucky-wheel/index",
+    "lucky-grid": "/miniprogram_npm/@lucky-canvas/mini/lucky-grid/index",
+    "slot-machine": "/miniprogram_npm/@lucky-canvas/mini/slot-machine/index"
+  }
+}
