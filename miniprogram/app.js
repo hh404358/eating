@@ -17,9 +17,6 @@ App({
       
     }
     wx.setStorageSync('baseURL', 'http://localhost:8083/');
-    // this.globalData = {
-    //   //BaseURL: 'http://localhost:8083/'
-    // };
   },
       // 请求用户信息授权
     requestUserInfo: function() {

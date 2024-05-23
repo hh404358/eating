@@ -1,159 +1,84 @@
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 5px;
-  /* 根据需要调整 */
-}
-
-.icon {
-  width: 85px;
-  /* 图片宽度，根据实际情况调整 */
-  height: 85px;
-  /* 图片高度，根据实际情况调整 */
-  margin-bottom: 5px;
-  /* 图片和文字间的间隔 */
-}
-
-.desc {
-  font-size: 12px;
-  /* 文字说明的字体大小，根据需要调整 */
-  color: #333;
-  /* 文字说明的颜色，根据需要调整 */
-}
-
-.shop {
-  margin-top: 20px;
-}
-
-.box {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  background-color: #FFC107;
-  /* 盒子之间的间隔 */
-}
-
-.icon {
-  width: 60px;
-  /* 图片宽度 */
-  height: 60px;
-  /* 图片高度 */
-  margin-right: 10px;
-  /* 图片和文字之间的间隔 */
-}
-
-.desc {
-  font-size: 14px;
-  /* 文字说明的字体大小 */
-  color: #333;
-  /* 文字说明的颜色 */
-}
-
-.navbar {
-  width: 100%;
-  height: 7vh;
-  background-color: pink;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
-  background-color: #e0e0e0
-}
-
-/* 导航项样式 */
-.nav-item {
-  padding: 5px 20px;
-  color: #333;
-  text-align: center;
-  border-radius: 5px;
-}
-
-/* 为当前激活的导航项添加样式 */
-.nav-item.active {
-  background-color: #e0e0e0;
-}
-
-.nav-image {
-  width: 35px;
-  /* 根据需要调整 */
-  height: 35px;
-  /* 根据需要调整 */
-}
-
-/* index.wxss */
 .container {
   display: flex;
   justify-content: space-between;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  /* 设置为垂直排列 */
-  width: 48%;
-  /* 根据需要调整宽度，留出间隙 */
-  margin-right: 4%;
-  /* 右边距，确保两列之间有间隙 */
-}
-
-.box {
-  margin-bottom: 20px;
-  /* 盒子之间的间距 */
-}
-
-.image {
+.post {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
   width: 100%;
-  /* 图片宽度占满盒子宽度 */
-  /* 根据图片展示的需求选择合适的 mode 属性 */
-}
-
-.text {
-  margin-top: 10px;
-  /* 图片与文字间的间距 */
-  /* 可以根据需要添加更多样式 */
-}
-
-/* index.wxss */
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  /* 设置为垂直排列 */
-  width: 48%;
+  height: 60%;
   /* 根据需要调整宽度，留出间隙 */
-  margin-right: 4%;
+  margin-right: 2%;
   /* 右边距，确保两列之间有间隙 */
+  margin-left: 2%;
 }
 
 .box {
-  margin-bottom: 20px;
+  padding-bottom: 5%;
+  margin-bottom: 0;
   /* 盒子之间的间距 */
   display: flex;
   flex-direction: column;
+  height: 80%;
+  border-color: black;
+  border-style:initial;
+  border-radius: 5%;
   /* 确保图片和文字在同一个盒子内垂直排列 */
 }
+.post .box {
+  transition: box-shadow 0.3s; /* 平滑过渡效果 */
+}
 
+.post .box:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* 悬浮时的阴影效果 */
+}
+
+/* 如果你想要为每个 post 添加不同的悬浮效果，可以使用 :nth-child 选择器 */
+.post .box:nth-child(odd):hover {
+  box-shadow: 0 8px 16px #db767680; /* 奇数项的悬浮效果 */
+}
+
+.post .box:nth-child(even):hover {
+  box-shadow: 0 8px 16px #70fd7080; /* 偶数项的悬浮效果 */
+}
 .image {
   width: 100%;
+  border-radius: 5%;
   /* 图片宽度占满盒子宽度 */
   /* 根据图片展示的需求选择合适的 mode 属性 */
 }
-
-.text {
-  margin-top: 10px;
-  /* 图片与文字间的间距 */
-  /* 可以根据需要添加更多样式 */
+.title{
+  margin-top: 5px;
+  margin-bottom:10px;
+}
+.summary{
+  margin-top: 0px;
+}
+.avatar{
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.thumb{
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+.userName{
+  font-size: 14px;
+  color:gray;
+}
+.position{
+  display: flex;
+}
+.pos{
+  width: 30px;
+  height: 20px;
+}
+.address{
+  color:gray;
+  font-size: 12px;
 }

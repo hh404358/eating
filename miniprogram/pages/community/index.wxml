@@ -1,5 +1,5 @@
 <mp-searchbar ext-class='search' placeholder='搜索美食！'></mp-searchbar>
-<!-- index.wxml -->
+<!-- index.wxml
 <view class="container">
   <view class="column">
     <view class="box" wx:for="{{boxes}}" wx:key="id">
@@ -13,18 +13,25 @@
       <text class="text">{{item.text}}</text>
     </view>
   </view>
-</view>
-<view class="navbar">
-  <navigator url="/pages/index/index" class="nav-item">
-    <image src='../../icons/首页-线框.png' mode="aspectFill" class="nav-image"></image>
-  </navigator>
-  <navigator url="/pages/form/index" class="nav-item">
-    <image src='../../icons/推荐-线框.png' mode="aspectFill" class="nav-image"></image>
-  </navigator>
-  <navigator url="/pages/community/index" class="nav-item">
-    <image src='../../icons/社区-面.png' mode="aspectFill" class="nav-image"></image>
-  </navigator>
-  <navigator url="/pages/aboutme/index" class="nav-item">
-    <image src='../../icons/我的-线框.png' mode="aspectFill" class="nav-image"></image>
-  </navigator>
+</view> -->
+<view class="container">
+  <view class="post">
+    <card class="box" wx:for="{{posts}}" bind:tap="postDetail" data-id="{{item.id}}">
+      <image src="{{item.thumbnail}}" mode="aspectFill" class="image"  ></image>
+      <text class = "title">{{item.title}}</text>
+      <div>
+        <image class = "avatar" src="{{item.avatar}}" ></image>
+        <text class="userName">{{item.userName}}</text>
+        <text style="float: right;">{{item.thumb}}</text>
+        <image class = "thumb" src="{{item.isThumb}} ? '../../icons/爱心-面.png' : '../../icons/爱心-线框.png'}}" >{{item.thumb}}</image>
+       
+      </div>
+      <div class="position">
+        <image src="../../icons/位置-面.png" class = "pos"></image>
+      <text class="address">{{item.address}}</text>
+      
+      </div>
+      
+    </card>
+  </view>
 </view>

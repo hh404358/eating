@@ -6,17 +6,26 @@
 }
 
 .navbar {
-  width: 100%;
-  height: 7vh;
-  background-color: pink;
+  position: fixed; /* 固定定位 */
+  left: 0;
+  bottom: 0;
+  width: 100%; /* 宽度为100%，占满整个视口底部 */
+  height: 0vh;
+  background: #e0e0e0;
+  display: flex; /* 使用 flexbox 布局 */
+  justify-content: space-around; /* 项目平均分布 */
+  align-items: center; /* 垂直居中对齐 */
+  height: 10vh; /* 导航栏高度 */
+  z-index: 1000; /* 确保导航栏在其他内容之上 */
+  
 }
 
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
   background-color: #e0e0e0
-}
+} */
 
 /* 导航项样式 */
 .nav-item {

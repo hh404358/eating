@@ -1,24 +1,18 @@
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.type{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  width: 100%;
+  height: 60%;
+  /* 根据需要调整宽度，留出间隙 */
+  margin-right: 2%;
+  /* 右边距，确保两列之间有间隙 */
+  margin-left: 2%;
 }
 
-.column {
+.box1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 5px;
-  /* 根据需要调整 */
-}
-
-.icon {
-  width: 85px;
-  /* 图片宽度，根据实际情况调整 */
-  height: 85px;
-  /* 图片高度，根据实际情况调整 */
-  margin-bottom: 5px;
-  /* 图片和文字间的间隔 */
 }
 
 .desc {

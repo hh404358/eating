@@ -4,6 +4,7 @@
     "pages/form/index",
     "pages/community/index",
     "pages/aboutme/index"
+   
   ],
   "window": {
     "backgroundColor": "#FFF",
@@ -26,5 +27,38 @@
   },
   "staticResources": {
     "icon": "icons/homeface.svg"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页", 
+        "iconPath": "icons/首页-线框.png",
+        "selectedIconPath": "icons/首页-面.png",
+        "selectColor":"black"
+        
+      },
+      {
+        "pagePath": "pages/form/index",
+        "text": "餐厅",
+        "iconPath": "icons/推荐-线框.png",
+        "selectedIconPath": "icons/推荐-面.png",
+        "selectColor":"blue"
+      },
+      {
+        "pagePath": "pages/community/index",
+        "text": "社区",
+        "iconPath": "icons/社区-线框.png",
+        "selectedIconPath": "icons/社区-面.png",
+        "selectColor":"blue"
+      },
+      {
+        "pagePath": "pages/aboutme/index",
+        "text": "我",
+        "iconPath": "icons/我的-线框.png",
+        "selectedIconPath": "icons/我的-面.png",
+        "selectColor":"blue"
+      }
+    ]
   }
 }
